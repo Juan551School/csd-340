@@ -2,3 +2,4 @@
 
 ## Contributors
 - Juan Carlos Macias Vasquez
+- Instructor Adam Bailey
