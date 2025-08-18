@@ -1,0 +1,84 @@
+/* Juan Carlos Macias Vasquez
+    Week 1 Module 2.2 Assignment
+    CSD340-H323 Web Development with HTML and (2261-DD)
+    August 15th, 2025
+    This CSS file styles the HTML document for the assignment.
+*/
+
+
+/* Base styles */
+html, body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container styling */
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Heading styles */
+h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-weight: 500;
+    text-align: left;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Paragraph styles */
+p {
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.intro {
+    text-indent: 2em;
+}
+
+/* Highlighted sentence */
+.sentence {
+    font-style: italic;
+}
+
+/* Address styling */
+address {
+    text-align: center; /* to mkae sure the address is centered */
+    font-style: normal;
+    margin-top: 20px;
+}
+
+    address p {
+        text-align: center;
+        margin: 0;
+    }
+
+    /* Website link styling */
+    address a {
+        font-weight: bold;
+        font-size: 1.25em;
+        color: #4F3674;
+        text-decoration: none;
+    }
+
+        /* Hover effect */
+        address a:hover {
+            text-decoration: underline;
+            background-color: #D6A800;
+        }
+
+        /* Visited link effect */
+        address a:visited {
+            color: #800080; /* purple for visited links */
+        }
