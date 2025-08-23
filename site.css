@@ -1,0 +1,63 @@
+/* Juan Carlos Macias Vasquez
+    Week  Module 3.2 Assignment
+    CSD340-H323 Web Development with HTML and CSS(2261-DD)
+    August 22th, 2025
+    This CSS file styles the HTML document for the assignment.
+*/
+
+
+/* Container */
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: Arial, sans-serif;
+}
+
+/* Main headers (H1 & H2 at the top) */
+h1 {
+    background-color: #b22222; /* firebrick red */
+    color: #ffffff;
+    padding: 15px;
+    margin: 0;
+}
+
+h2 {
+    background-color: #b22222;
+    color: #ffffff;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.3em;
+}
+
+/* Section headers (Module Assignments, Projects, Links) */
+h3 {
+    background-color: #b22222;
+    color: #ffffff;
+    padding: 8px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+/* Lists under section headers */
+ul {
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 0;
+    list-style-type: disc;
+}
+
+/* Links */
+a {
+    color: #b22222;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    a:hover {
+        color: #D6A800;
+    }
+
+    a:visited {
+        color: #7f8c8d;
+    }

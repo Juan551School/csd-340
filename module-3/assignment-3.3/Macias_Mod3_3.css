@@ -1,0 +1,62 @@
+/* Juan Carlos Macias Vasquez
+    Week  Module 3.3 Assignment
+    CSD340-H323 Web Development with HTML and CSS(2261-DD)
+    August 22th, 2025
+    This CSS file styles the HTML document for the assignment.
+*/
+
+
+/* Center the main title */
+h1 {
+    text-align: center;
+}
+
+/* Flexbox for side-by-side layout */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Shared box styles */
+.left-div, .right-div {
+    width: 45%;
+    padding: 10px;
+    font-weight: 300;
+}
+
+/* h3 titles */
+h3 {
+    font-weight: 500;
+}
+
+/* Books */
+.left-div {
+    border: 1px solid red;
+    border-radius: 15px;
+    list-style-position: inside;
+}
+
+/*  Things learned */
+.right-div {
+    border: 1px dashed red;
+    border-radius: 15px;
+    list-style-position: inside;
+}
+
+    .right-div ul {
+        list-style-type: upper-roman;
+        padding-left: 20px;
+    }
+
+/* Bottom link */
+.bottom-link {
+    width: 100%;
+    margin-top: 60%;
+    margin-bottom: 20px;
+    float: right;
+}
+
+/* Hover effect for links */
+a:hover {
+    text-decoration: underline;
+}
