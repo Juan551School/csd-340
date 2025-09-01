@@ -1,0 +1,41 @@
+/* Assignment 4.2 - CSS Code */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    text-align: center;
+}
+
+h1 {
+    color: rgba(165, 42, 42, 0.9); /* brownish */
+    text-align: center;
+}
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* three equal columns */
+    margin-top: 10%;
+    gap: 0; /* no extra space between borders */
+}
+
+    #image-gallery > div {
+        border: 1px solid red; /* red border around each column */
+        padding: 10px;
+    }
+
+h3 {
+    color: rgba(255, 69, 0, 0.9); /* orange-red */
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 1.2em; /* larger text */
+    color: red; /* red author text */
+}
