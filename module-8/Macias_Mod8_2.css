@@ -1,0 +1,113 @@
+/*
+Juan Carlos Macias Vasquez
+Week 5 Module 8.2 Assignment
+CSD340-H323 Web Development with HTML and CSS(2261-DD)
+September 14th, 2025
+Web Page part  CSS Code
+*/
+
+/* Header */
+header {
+    background-color: #b33a00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+/* Navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #b33a00;
+    border-bottom: 15px solid #808000;
+}
+
+    #navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        #navbar a:hover {
+            background-color: #ff9933;
+            color: black;
+        }
+
+/* Container */
+#container {
+    margin: 2% 5% 100px 5%;
+    padding: 10px;
+}
+
+/* Card */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+}
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+.card-title {
+    text-align: center;
+    font-size: 2em;
+    color: #b33a00;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.card-content {
+    padding: 2px 16px;
+}
+
+/* Movies Table */
+#movies {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+    #movies th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+    }
+
+    #movies td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+/* Footer */
+footer {
+    background-color: #b33a00;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+    footer p {
+        color: white;
+        font-weight: 400;
+        padding-right: 10px;
+        font-style: italic;
+        float: right;
+    }
+
+    footer a {
+        text-decoration: none;
+        color: white;
+    }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
