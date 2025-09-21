@@ -1,0 +1,85 @@
+<!-- Juan Carlos Macias Vasquez
+    Week 6 Module 9.3 Assignment
+    CSD340-H323 Web Development with HTML and CSS(2261-DD)
+    September 21st, 2025
+    JavaScript Exercise, Part 1
+    Html file
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Juan Macias">
+    <meta name="description" content="Assignment 9.3 – JavaScript Part 1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="Macias_Mod9_3.css">
+
+    <script>
+        // Four variables for blanks
+        var firstWord = "journey";
+        var secondWord = "family";
+        var thirdWord = "learning";
+        var fourthWord = "future";
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+        <h2>About Me</h2>
+
+        <p class="intro">
+            Hello, my name is Juan Macias Vasquez and my academic <span id="journey">_________</span> has been great in Bellevue.
+            I loved taking classes her specially compared to my last school.
+            I live with my <span id="family">_________</span>, that includes my father, mother, two sisters, and there are three cats in my house.
+            I have my own cat named and each of my sisters have their own cat but my cat and my youngest sister’s cat don’t get along.
+        </p>
+
+        <p>
+            I love <span id="learning">_________</span> about new technology mainly that focus on video games.
+            I liked seeing how I can connect the things I learned in class to things I use a lot like having code reading a file is how video games load save data
+            or having different types of code interact with each other even by just reading the other one’s file.
+            For this project it has the option of using JavaScript and I haven’t use it before only Python, currently learning Java, and very little C++
+            but I hope to learn more about JavaScript and how to use it.
+        </p>
+
+        <p>
+            What excites me most about this class is learning new things link connecting web pages together
+            Technology is always evolving, and I enjoy keeping up with new skills.
+            I look forward to using these skills in my future classes and building <span id="future">_________</span> carrier in programming.
+            For this project it has the option of using JavaScript and I haven’t use it before only Python, currently learning Java, and very little C++
+            but I hope to learn more about JavaScript and how to use it.
+        </p>
+
+        <p>
+            <!-- Buttons for each blank -->
+            <button type="button" onclick="document.getElementById('journey').innerHTML = firstWord">journey</button><br><br>
+            <button type="button" onclick="document.getElementById('family').innerHTML = secondWord">family</button><br><br>
+            <button type="button" onclick="document.getElementById('learning').innerHTML = thirdWord">learning</button><br><br>
+            <button type="button" onclick="document.getElementById('future').innerHTML = fourthWord">future</button>
+        </p>
+
+        <hr />
+
+        <address>
+            <p><a href="https://www.bellevue.edu" target="_blank">Bellevue University</a></p>
+            <p>1000 Galvin Road South</p>
+            <p>Bellevue, NE 68005</p>
+        </address>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p style="float:left;">&copy; Copyright 2025 - Macias</p>
+        <p><a href="../index.html">back to Landing Page</a></p>
+    </footer>
+
+</body>
+</html>
