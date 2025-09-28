@@ -1,0 +1,86 @@
+<!-- Juan Carlos Macias Vasquez
+    Week 7 Module 10.3 Assignment
+    CSD340-H323 Web Development with HTML and CSS(2261-DD)
+    September 28th, 2025
+    JavaScript Exercise, Part 2
+    Html file
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+        }
+
+            .gallery img:hover {
+                border-color: #666;
+            }
+
+        footer {
+            margin-top: auto;
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 10.3: JavaScript - Part 2</h1>
+    <p>Move your mouse over the images below to change them:</p>
+
+    <!-- Image gallery -->
+    <div class="gallery">
+        <!--This is of the Sun and Moon-->
+        <a href="#"
+           onmouseover="img1.src='sun.jpg';"
+           onmouseout="img1.src='moon.jpg';">
+            <img border="0" name="img1" src="sun.jpg" alt="Image 1">
+        </a>
+
+        <!--This is of a Playsttaion and Xbox-->
+        <a href="#"
+           onmouseover="img2.src='playstation.jpg';"
+           onmouseout="img2.src='xbox.jpg';">
+            <img border="0" name="img2" src="playstation.jpg" alt="Image 2">
+        </a>
+
+        <!--This one is my cat and my sisters cat-->
+        <a href="#"
+           onmouseover="img3.src='Ivy.jpg';"
+           onmouseout="img3.src='Skitty.jpg';">
+            <img border="0" name="img3" src="Skitty.jpg" alt="Image 3">
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your Name - CSD 340 Web Development with HTML and CSS</p>
+        <p><a href="../../index.html">back to Landing Page</a></p>
+    </footer>
+</body>
+</html>
