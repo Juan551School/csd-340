@@ -1,0 +1,80 @@
+<!-- Juan Carlos Macias Vasquez
+    Week 8 Module 11.2 Assignment
+    CSD340-H323 Web Development with HTML and CSS(2261-DD)
+    October 5th, 2025
+    JavaScript Exercise, Part 3
+    Html file
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+
+    <h1>Assignment 11.2: JavaScript - Part 3</h1>
+    <p>
+        This is an interactive To Do List. Type in your first item in the text box, then click Add.
+        Click the Display button to see current items in the list.
+        Click on Delete Last Entry if you'd like to remove the last entry.
+    </p>
+
+    <!-- Text box and the buttons -->
+    <input type="text" id="todoInput" placeholder="Enter a task">
+    <button onclick="addItem()">Add</button>
+    <button onclick="deleteLastItem()">Delete Last Entry</button>
+    <button onclick="displayItems()">Display</button>
+
+    <hr>
+    <!-- Where the list will be shown -->
+    <div id="todoList"></div>
+
+
+    <!-- Not 100% sure if this is good havent really used JavaScript but it worked -->
+    <script>
+        // Array to hold To Do List items
+        let todoArray = [];
+
+        // Function to add an item
+        function addItem() {
+        let item = document.getElementById("todoInput").value;
+        if (item === "") {
+        alert("Please enter something before adding!");
+        return;
+        }
+        todoArray.push(item);
+        alert("Item: " + item + " Added as Item " + todoArray.length);
+        document.getElementById("todoInput").value = ""; // clear box
+        }
+
+        // Function to delete the last item
+        function deleteLastItem() {
+        if (todoArray.length === 0) {
+        alert("No items to delete.");
+        return;
+        }
+        let removed = todoArray.pop();
+        alert("Removed last item: " + removed);
+        }
+
+        // Function to display items
+        function displayItems() {
+        let output = "";
+        for (let i = 0; i < todoArray.length; i++) {
+        output += "Item " + (i + 1) + " = " + todoArray[i] + "<br>";
+        }
+        document.getElementById("todoList").innerHTML = output;
+        }
+    </script>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Your Name - CSD 340 Web Development with HTML and CSS</p>
+        <p><a href="../../index.html">back to Landing Page</a></p>
+    </footer>
+
+</body>
+</html>
