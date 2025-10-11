@@ -1,0 +1,115 @@
+<!-- Juan Carlos Macias Vasquez
+    Week 9 Module 12.2 Assignment
+    CSD340-H323 Web Development with HTML and CSS(2261-DD)
+    October 10th, 2025
+    HTML Code for Assignment
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title> <!-- Changed the font -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .box {
+            border: 1px solid red;
+            border-radius: 10px;
+            padding: 20px;
+            width: 40%;
+        }
+
+        button {
+            margin: 5px;
+            padding: 5px 10px;
+        }
+
+        ol {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Assignment 12.2: JavaScript - Part 4</h1>  <!-- Renamed it -->
+
+    <div class="container">
+        <!-- Left Box -->
+        <div class="box">
+            <h3>Top 10 Favorite Books</h3>
+            <button onclick="topToBottom()">Top to Bottom</button>
+            <button onclick="bottomToTop()">Bottom to Top</button>
+            <hr>
+            <ol id="bookList"></ol>
+        </div>
+
+        <!-- Right Box -->
+        <div class="box" style="border: 1px dashed red;">
+            <h3>5 Things I've Learned Since the Course Started</h3>
+            <ol type="I">
+                <li>How the .css files connect to the Html file for proper aliment and size</li>
+                <li>How to connect the links on an html file to others to make pages</li>
+                <li>How to set the color in the webpages and make things pop </li>
+                <li>How to improve websites by making it easier for eh user to get used to it from the 100 Things book</li>
+                <li>Learning what the read me file in GitHub was and how to add things to it and change its font</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Added the landing page link -->
+    <p style="text-align:right;">
+        <a href="../../index.html">back to Landing Page</a>
+    </p>
+    <!-- Changed the book names to an array -->
+    <script>
+
+        // Book array
+        const books = [
+        "Dragon Ball",
+        "Lord of the Rings",
+        "Code Geass",
+        "The Hobbit",
+        "The Hitchhiker's Guide to the Galaxy",
+        "Tokyo Ghoul",
+        "Demon Slayer",
+        "Dune (have only read the first book)",
+        "Game of Thrones",
+        "The Hunger Games (only read the first three)"
+        ];
+
+        // Function: Top to Bottom (ascending)
+        function topToBottom() {
+        let list = "";
+        for (let i = 0; i < books.length; i++) {
+        list += `<li>${books[i]}</li>`;
+        }
+        document.getElementById("bookList").innerHTML = list;
+        }
+
+        // Function: Bottom to Top (descending)
+        function bottomToTop() {
+        let list = "";
+        for (let i = books.length - 1; i >= 0; i--) {
+        list += `<li>${books[i]}</li>`;
+        }
+        document.getElementById("bookList").innerHTML = list;
+        }
+
+        // Default: show descending order
+        bottomToTop();
+    </script>
+</body>
+</html>
